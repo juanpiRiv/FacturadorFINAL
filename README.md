@@ -64,23 +64,23 @@ services:
 
  ##2. Actualizar application.properties para MySQL :
  
- # DB en Docker
+ DB en Docker
 spring.datasource.url=jdbc:mysql://localhost:3306/fact?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
 spring.datasource.username=root
 spring.datasource.password=root
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
-# Hibernate
+ Hibernate
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 spring.jpa.properties.hibernate.format_sql=true
 spring.jpa.properties.hibernate.current_session_context_class=org.springframework.orm.hibernate5.SpringSessionContext
 
-# Swagger UI
+ Swagger UI
 springdoc.swagger-ui.path=/swagger-ui.html
 
-# Port
+ Port
 server.port=5000
 
 
