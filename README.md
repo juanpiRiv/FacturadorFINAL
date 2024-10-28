@@ -67,7 +67,7 @@ services:
       - ./mysql_data:/var/lib/mysql
 
 
-#Actualizar application.properties para MySQL :
+###Actualizar application.properties para MySQL:
  
 # Configuración DB en Docker
 spring.datasource.url=jdbc:mysql://localhost:3306/fact?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
