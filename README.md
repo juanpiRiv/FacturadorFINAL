@@ -70,6 +70,8 @@ spring.jpa.properties.hibernate.current_session_context_class=org.springframewor
 # Configuración de Swagger
 springdoc.swagger-ui.path=/swagger-ui.html
 
+http://localhost:5000/swagger-ui/index.html#/
+
 # Configuración del Puerto
 server.port=5000
 
