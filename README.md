@@ -67,8 +67,7 @@ services:
       - ./mysql_data:/var/lib/mysql
 
 
-
- #Actualizar application.properties para MySQL :
+#Actualizar application.properties para MySQL :
  
 # Configuración DB en Docker
 spring.datasource.url=jdbc:mysql://localhost:3306/fact?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
@@ -90,7 +89,7 @@ springdoc.swagger-ui.path=/swagger-ui.html
 server.port=5000
 
 
-#3. Iniciar el contenedor Docker
+#Iniciar el contenedor Docker
 
 Ejecuta el siguiente comando para iniciar MySQL en Docker:
 
