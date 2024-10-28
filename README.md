@@ -33,10 +33,63 @@ Un proyecto de facturación desarrollado en Java que ofrece una API REST para ge
 - **Spring Boot** - Framework principal para el desarrollo de la API.
 - **H2 Database** - Base de datos en memoria para desarrollo y pruebas.
 - **Swagger** - Generación de documentación de la API.
+-  **MySQL (opcional)** - Base de datos persistente en Docker.
 - **Docker** - Para la creación de contenedores de la aplicación.
 - **Postman** - Para pruebas de endpoints de la API.
 
 ### Requisitos previos
 - [Docker](https://docs.docker.com/get-docker/) (para la ejecución en contenedor)
 - [Postman](https://www.postman.com/downloads/) (opcional, para pruebas)
+
+### Configuración con Docker y MySQL
+ -Si deseas utilizar Docker para ejecutar la aplicación con MySQL como base de datos, sigue estos pasos adicionales.
+ ##1 .Crear el archivo docker-compose.yml
+
+Crea un archivo docker-compose.yml en la raíz del proyecto con el siguiente contenido:
+
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      - MYSQL_USER=jp
+      - MYSQL_PASSWORD=root
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+
+
+
+ ##2. Actualizar application.properties para MySQL :
+ 
+ # DB en Docker
+spring.datasource.url=jdbc:mysql://localhost:3306/fact?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
+spring.datasource.username=root
+spring.datasource.password=root
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# Hibernate
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.current_session_context_class=org.springframework.orm.hibernate5.SpringSessionContext
+
+# Swagger UI
+springdoc.swagger-ui.path=/swagger-ui.html
+
+# Port
+server.port=5000
+
+
+##3. Iniciar el contenedor Docker
+
+Ejecuta el siguiente comando para iniciar MySQL en Docker:
+
+docker-compose up -d
+
+
+
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
