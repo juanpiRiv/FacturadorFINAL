@@ -43,7 +43,7 @@ Un proyecto de facturación desarrollado en Java que ofrece una API REST para ge
 
 ### Configuración con Docker y MySQL
  -Si deseas utilizar Docker para ejecutar la aplicación con MySQL como base de datos, sigue estos pasos adicionales.
- ##1 .Crear el archivo docker-compose.yml
+ #1.Crear el archivo docker-compose.yml
 
 Crea un archivo docker-compose.yml en la raíz del proyecto con el siguiente contenido:
 
@@ -62,7 +62,7 @@ services:
 
 
 
- ##2. Actualizar application.properties para MySQL :
+ #2.Actualizar application.properties para MySQL :
  
  DB en Docker
 spring.datasource.url=jdbc:mysql://localhost:3306/fact?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
@@ -84,7 +84,7 @@ springdoc.swagger-ui.path=/swagger-ui.html
 server.port=5000
 
 
-##3. Iniciar el contenedor Docker
+#3. Iniciar el contenedor Docker
 
 Ejecuta el siguiente comando para iniciar MySQL en Docker:
 
