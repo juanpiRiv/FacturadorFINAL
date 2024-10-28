@@ -1,5 +1,5 @@
 
-# Facturador API
+# 📊 Facturador API
 
 Un proyecto de facturación desarrollado en Java que ofrece una API REST para gestionar y consultar facturas. Este proyecto utiliza una base de datos en memoria H2 y puede ejecutarse en un contenedor Docker. Además, cuenta con documentación de API generada con Swagger y se proporcionan pruebas con Postman.
 
