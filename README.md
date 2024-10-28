@@ -32,6 +32,7 @@ Un proyecto de facturación desarrollado en Java que ofrece una API REST para ge
    cd FacturadorFINAL
 
 ### Configuración con Docker y MySQL
+-Ejemplo de ayuda proyecto inizializado en Docker: https://github.com/juanpiRiv/JavaProyect
  -Si deseas utilizar Docker para ejecutar la aplicación con MySQL como base de datos, sigue estos pasos adicionales.
  #1.Crear el archivo docker-compose.yml
 
