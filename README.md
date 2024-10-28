@@ -40,6 +40,12 @@ Un proyecto de facturación desarrollado en Java que ofrece una API REST para ge
 ### Requisitos previos
 - [Docker](https://docs.docker.com/get-docker/) (para la ejecución en contenedor)
 - [Postman](https://www.postman.com/downloads/) (opcional, para pruebas)
+ ### Configuración Local
+
+1. **Clona el repositorio**
+   ```bash
+   git clone [https://github.com/juanpiRiv/FacturadorFINAL.git]
+   cd FacturadorFINAL
 
 ### Configuración con Docker y MySQL
  -Si deseas utilizar Docker para ejecutar la aplicación con MySQL como base de datos, sigue estos pasos adicionales.
@@ -62,25 +68,25 @@ services:
 
 
 
- #2.Actualizar application.properties para MySQL :
+ #Actualizar application.properties para MySQL :
  
- DB en Docker
+# Configuración DB en Docker
 spring.datasource.url=jdbc:mysql://localhost:3306/fact?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
 spring.datasource.username=root
 spring.datasource.password=root
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
- Hibernate
+# Configuración de Hibernate
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 spring.jpa.properties.hibernate.format_sql=true
 spring.jpa.properties.hibernate.current_session_context_class=org.springframework.orm.hibernate5.SpringSessionContext
 
- Swagger UI
+# Configuración de Swagger
 springdoc.swagger-ui.path=/swagger-ui.html
 
- Port
+# Configuración del Puerto
 server.port=5000
 
 
