@@ -1,18 +1,23 @@
+# 💫 About Me:
+🔭 I’m currently working on java<br>💬 Ask me about<br>⚡ Fun fact
+
+
+## 🌐 Socials:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/juanriveroalbornoz/) 
+
+# 💻 Tech Stack:
+![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=JuanpiRiv&theme=dark&hide_border=false&include_all_commits=true&count_private=false)<br/>
+![](https://github-readme-streak-stats.herokuapp.com/?user=JuanpiRiv&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=JuanpiRiv&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
+
+---
+[![](https://visitcount.itsvg.in/api?id=JuanpiRiv&icon=0&color=0)](https://visitcount.itsvg.in)
+
 # Facturador API
 
 Un proyecto de facturación desarrollado en Java que ofrece una API REST para gestionar y consultar facturas. Este proyecto utiliza una base de datos en memoria H2 y puede ejecutarse en un contenedor Docker. Además, cuenta con documentación de API generada con Swagger y se proporcionan pruebas con Postman.
-
-## Tabla de Contenidos
-- [Características](#características)
-- [Tecnologías Utilizadas](#tecnologías-utilizadas)
-- [Instalación](#instalación)
-  - [Requisitos previos](#requisitos-previos)
-  - [Configuración Local](#configuración-local)
-  - [Ejecución en Docker](#ejecución-en-docker)
-- [Documentación API](#documentación-api)
-- [Pruebas con Postman](#pruebas-con-postman)
-- [Contribución](#contribución)
-- [Licencia](#licencia)
 
 ## Características
 
@@ -24,24 +29,14 @@ Un proyecto de facturación desarrollado en Java que ofrece una API REST para ge
 
 ## Tecnologías Utilizadas
 
-- **Java** - Versión 11 o superior.
+- **Java** - Versión 17 o superior.
 - **Spring Boot** - Framework principal para el desarrollo de la API.
 - **H2 Database** - Base de datos en memoria para desarrollo y pruebas.
 - **Swagger** - Generación de documentación de la API.
 - **Docker** - Para la creación de contenedores de la aplicación.
 - **Postman** - Para pruebas de endpoints de la API.
 
-## Instalación
-
 ### Requisitos previos
-
-- [Java 11+](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html)
 - [Docker](https://docs.docker.com/get-docker/) (para la ejecución en contenedor)
 - [Postman](https://www.postman.com/downloads/) (opcional, para pruebas)
-
-### Configuración Local
-
-1. **Clonar el repositorio**
-   ```bash
-   git clone https://github.com/usuario/facturador-api.git
-   cd facturador-api
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
